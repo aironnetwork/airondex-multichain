@@ -54,17 +54,16 @@ AironDex Multichain adalah decentralized exchange (DEX) yang berfokus pada low-c
 | 84532    | Base Sepolia         | `0x8cFe327CEc66d1C090Dd72bd0FF11d690C33a2Eb`                           | `0x02a84c1b3BBD7401a5f7fa98a384EBC70bB5749E`                          | `0x4200000000000000000000000000000000000006` (WETH)   |
 | 2030     | AironChain Testnet   | `0x224cd6F72660fE1eFA650255a2bCa9670b4d38c1`                           | `0xA65CB0c559aA59dcB40e256A2DBAAa403181Bd11`                          | `0x11C43293631a7c810918A10164016cEe458ac64D` (WAIR)   |
 
-
 **Token Addresses (optional):**
 
-| Network     | Symbol | Address   |
-|-------------|--------|-----------|
-| BNB Mainnet | AIR    | `0x...`   |
-| BNB Testnet | AIR    | `0x...`   |
-| Ethereum    | AIR    | `0x...`   |
-| Sepolia     | AIR    | `0x...`   |
+| Network           | Symbol | Address                                   |
+|-------------------|--------|-------------------------------------------|
+| BNB Mainnet       | AIR    | `0x11C43293631a7c810918A10164016cEe458ac64D` |
+| BNB Testnet       | AIR    | `0x...`                                   |
+| Ethereum Mainnet  | AIR    | `0x...`                                   |
+| Sepolia Testnet   | AIR    | `0x...`                                   |
+| AironChain Testnet| AIR    | `0x11C43293631a7c810918A10164016cEe458ac64D` |
 
----
 
 ## 🚀 Quick Start
 
