@@ -13,7 +13,7 @@
 ## ✨ Features
 
 - ⚡ **Low-cost swaps**: Optimized for BNB Chain with minimal gas fees  
-- 🌐 **Multi-chain support**: Ethereum, BSC, Sepolia, Arbitrum, Base, and more  
+- 🌐 **Multi-chain support**: Ethereum, BSC, Sepolia, Arbitrum, Base, and AironChain  
 - 💧 **Liquidity Pools & LP Rewards**: Uniswap V2-style AMM design  
 - 🔒 **Security controls**: Timelock, pausability, role-based access  
 - 📊 **Analytics ready**: TVL, volume, TradingView adapter hooks  
@@ -23,7 +23,7 @@
 
 ## 🧱 Technology Stack
 
-- **Blockchain:** BNB Smart Chain + EVM-compatible chains  
+- **Blockchain:** BNB Smart Chain + AironChain + EVM-compatible chains  
 - **Smart Contracts:** Solidity ^0.x.x (OpenZeppelin based)  
 - **Frontend:** Next.js + React with wagmi & ethers.js  
 - **Dev Tooling:** Hardhat (deploy, verify, tests)  
@@ -38,8 +38,10 @@
 - **Sepolia Testnet** (Chain ID: 11155111)  
 - **Arbitrum One** (Chain ID: 42161)  
 - **Base Mainnet** (Chain ID: 8453)  
-- **Testnets:** Arbitrum Sepolia (421614), Base Sepolia (84532)  
-- *(AironChain Testnet/Mainnet coming soon)*  
+- **Arbitrum Sepolia** (Chain ID: 421614)  
+- **Base Sepolia** (Chain ID: 84532)  
+- **AironChain Testnet** (Chain ID: 2030)  
+- *(AironChain Mainnet coming soon)*  
 
 ---
 
