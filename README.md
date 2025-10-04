@@ -62,7 +62,7 @@ AironDex Multichain adalah decentralized exchange (DEX) yang berfokus pada low-c
 | BNB Testnet       | AIR    | `0x...`                                   |
 | Ethereum Mainnet  | AIR    | `0x...`                                   |
 | Sepolia Testnet   | AIR    | `0x...`                                   |
-| AironChain Testnet| AIR    | `0x11C43293631a7c810918A10164016cEe458ac64D` |
+| AironChain Testnet| WAIR    | `0x11C43293631a7c810918A10164016cEe458ac64D` |
 
 
 ## 🚀 Quick Start
