@@ -1,0 +1,80 @@
+
+@import "./Liquidity.css";
+
+
+.ls-topbar{
+  display:flex; align-items:center; justify-content:flex-end;
+  margin:6px 0 10px;
+}
+.search.mini{
+  display:inline-flex; align-items:center; gap:8px;
+  height:36px; padding:0 12px; border-radius:10px;
+  border:1px solid var(--air-stroke); background:#0b1113;
+}
+.search.mini input{ outline:none; border:0; background:transparent; color:#eafff3; min-width:240px; }
+.search.mini svg{ opacity:.7 }
+
+
+.ls-scroll{
+  overflow-x:auto; -webkit-overflow-scrolling:touch;
+}
+.ls-scroll::-webkit-scrollbar{ height:8px }
+.ls-scroll::-webkit-scrollbar-thumb{ background:#1a2a25; border-radius:10px }
+
+
+.ls-table{
+  min-width: 720px; 
+}
+.ls-table .thead,
+.ls-table .tbody .tr{
+  display:grid;
+  grid-template-columns: 2fr 1fr 1.2fr 1.2fr 1fr;
+  gap:12px; align-items:center;
+}
+.ls-table .thead{
+  padding:14px 16px; background:#0b1113;
+  border:1px solid var(--air-stroke); border-radius:12px;
+  color:#9fdab9; font-weight:800; font-size:12px;
+  text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px;
+}
+.ls-table .tbody .tr{
+  padding:14px 16px; border:1px solid var(--air-stroke);
+  border-radius:12px; background:#0b1113; margin-bottom:8px;
+  transition:background .12s, transform .12s;
+}
+.ls-table .tbody .tr:hover{ background:#0c1416; transform:translateY(-1px) }
+
+.td.pool .pair{ display:flex; align-items:center; gap:12px }
+.td.pool .pair .meta{ display:grid; gap:2px }
+.td.pool .pair .sym{ font-weight:900; color:#e9ffee }
+.td.pool .chain{ display:inline-flex; align-items:center; gap:6px; color:#9ed4b4; font-size:12px }
+.td.pool .chain img{ width:14px; height:14px; border-radius:50% }
+
+.chip{
+  padding:6px 10px; border-radius:999px;
+  background:rgba(33,220,140,.12); border:1px solid rgba(66,255,166,.2);
+  color:#caffeb; font-weight:800; font-size:12px;
+}
+
+
+.empty{ padding:40px 16px; text-align:center }
+.empty .title{ font-weight:900; margin-bottom:6px }
+.empty .sub{ opacity:.8 }
+
+.tr.sk{
+  height:56px; border:1px solid var(--air-stroke); border-radius:12px;
+  background:linear-gradient(90deg, rgba(40,60,50,0.22), rgba(40,60,50,0.06), rgba(40,60,50,0.22));
+  background-size:200% 100%; animation:lsShine 1.2s linear infinite;
+  margin-bottom:8px;
+}
+@keyframes lsShine{ 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+
+
+@media (max-width:980px){
+  .search.mini input{ min-width:180px }
+  .ls-table{ min-width: 680px; }
+}
+@media (max-width:720px){
+  .ls-table{ min-width: 640px; } 
+  .ls-table .th.type, .ls-table .td.type{ display:none }
+}

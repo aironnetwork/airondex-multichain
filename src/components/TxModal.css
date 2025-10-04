@@ -1,0 +1,58 @@
+
+.tx-overlay{
+  position:fixed; inset:0; background:rgba(7,14,12,.65);
+  backdrop-filter: blur(2px); z-index:1000;
+}
+
+
+.tx-card{
+  position:fixed; left:50%; top:50%; transform:translate(-50%,-50%);
+  width:min(520px, 92vw);
+  background:linear-gradient(180deg,#0e1715 0%, #0b1311 100%);
+  border:1px solid rgba(104,255,183,.16);
+  box-shadow:0 20px 60px rgba(0,0,0,.45), inset 0 0 40px rgba(10,250,160,.05);
+  border-radius:24px; padding:28px 26px; z-index:1001; text-align:center;
+}
+
+.tx-icon{ display:flex; justify-content:center; margin-bottom:14px; }
+.tx-img{ width:84px; height:84px; object-fit:contain; }
+
+
+.tx-spinner{
+  width:92px; height:92px; border-radius:50%; position:relative;
+  background:
+    radial-gradient(closest-side, rgba(0,0,0,0) 72%, rgba(0,0,0,0) 0 100%),
+    conic-gradient(#55ffbf 10%, rgba(85,255,191,0.15) 0);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 10px), #000 0);
+          mask: radial-gradient(farthest-side, #0000 calc(100% - 10px), #000 0);
+  animation: txspin 1s linear infinite;
+  filter: drop-shadow(0 0 12px rgba(85,255,191,.45));
+}
+@keyframes txspin { to { transform: rotate(360deg); } }
+
+.tx-title{ font-size:24px; font-weight:900; color:#cffff0; margin-bottom:6px; }
+.tx-sub{ color:#a8cfc2; font-size:15px; line-height:1.4; margin-bottom:10px; }
+.tx-hash{
+  margin:8px auto 2px; padding:6px 10px; width:max-content;
+  font-family:ui-monospace, Menlo, monospace; font-size:13px;
+  color:#9bead1; background:rgba(20,255,180,.08);
+  border:1px dashed rgba(20,255,180,.25); border-radius:10px;
+}
+
+.tx-actions{ display:flex; justify-content:center; gap:8px; margin-top:14px; }
+.btn{ appearance:none; border:0; cursor:pointer; border-radius:14px;
+  padding:10px 16px; font-weight:800; letter-spacing:.2px; font-size:14px; transition:.15s;
+}
+.btn.primary{ background:#1ddb8d; color:#062218; }
+.btn.primary:hover{ filter:brightness(1.06); }
+.btn.ghost{ background:transparent; color:#cfe7df; border:1px solid rgba(175,255,215,.25); }
+.btn.ghost:hover{ background:rgba(175,255,215,.08); }
+.btn.danger{ background:#e90303; color:#230b0b; }
+.btn.danger:hover{ filter:brightness(1.06); }
+
+@media (max-width:480px){
+  .tx-card{ padding:22px 18px; }
+  .tx-title{ font-size:20px; }
+  .tx-img{ width:70px; height:70px; }
+  .tx-spinner{ width:76px; height:76px; }
+}

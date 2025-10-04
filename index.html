@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary -->
+    <title>Airon DEX | Multichain AMM & Cross-Chain DeFi | Airon Network</title>
+    <meta
+      name="description"
+      content="Airon DEX is the multichain AMM at the core of the Airon Network ecosystem. Swap, add/remove liquidity, and manage LPs across BNB Chain, Ethereum, Arbitrum, Base, and the Airon Layer-1. Built with Proof-of-Authority performance, low fees, and AI-assisted tooling."
+    />
+    <meta name="keywords" content="Airon DEX, Airon Network, AMM, multichain, DeFi, liquidity, LP, swap, bridge, launchpad, staking, AI audit, AI deploy, PoA blockchain" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0CE06B" />
+    <link rel="canonical" href="/" />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <!-- If you ship a PWA later, uncomment the manifest -->
+    <!-- <link rel="manifest" href="/manifest.webmanifest" /> -->
+
+    <!-- Social rel=me (optional but nice for verification) -->
+    <link rel="me" href="https://x.com/Airon_Layer1" />
+    <link rel="me" href="https://github.com/aironnetwork" />
+    <link rel="me" href="https://medium.com/@Airon_Layer1" />
+    <link rel="me" href="https://t.me/airon_network" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Airon Network" />
+    <meta property="og:title" content="Airon DEX — Multichain AMM & Cross-Chain DeFi" />
+    <meta
+      property="og:description"
+      content="Swap and provide liquidity with a professional, low-fee AMM. Part of the Airon Network ecosystem with bridge, launchpad, staking, and AI-powered tools."
+    />
+    <meta property="og:url" content="/" />
+    <!-- NOTE: best served from /public for crawlers -->
+    <meta property="og:image" content="/src/assets/home/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Airon DEX — Multichain AMM on Airon Network" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Airon_Layer1" />
+    <meta name="twitter:creator" content="@Airon_Layer1" />
+    <meta name="twitter:title" content="Airon DEX — Multichain AMM & Cross-Chain DeFi" />
+    <meta
+      name="twitter:description"
+      content="Airon DEX powers professional, low-fee swapping and liquidity. Integrated with Airon bridge, launchpad, staking, and AI-assisted security."
+    />
+    <meta name="twitter:image" content="/src/assets/home/og.png" />
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Airon Network",
+      "url": "/",
+      "logo": "/favicon.png",
+      "sameAs": [
+        "https://x.com/Airon_Layer1",
+        "https://github.com/aironnetwork",
+        "https://medium.com/@Airon_Layer1",
+        "https://t.me/airon_network"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: WebSite (site-level search hook if you add search later) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Airon Network",
+      "url": "/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "/search?q={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: WebApplication (DEX) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Airon DEX",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "url": "/",
+      "description": "A professional multichain AMM for swaps and liquidity management across BNB Chain, Ethereum, Arbitrum, Base, and Airon Layer-1.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Airon Network"
+      }
+    }
+    </script>
+
+    <!-- Ecosystem copy for crawlers (non-visible), stays within SEO best-practice -->
+    <meta
+      name="airon:ecosystem"
+      content="Airon DEX (AMM), Bridge (low-fee cross-chain), Launchpad (secure token offerings), Staking, Token tools (ARC20/ERC20), AI Audit & AI Deploy, Wallet integrations, and dev SDKs—running on Airon Layer-1 PoA with multichain support for BNB Chain, Ethereum, Arbitrum, and Base."
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Footer JSON for clients to read (optional) -->
+    <script id="__AIRONDOC__" type="application/json">
+      {
+        "brand": "Airon Network",
+        "socials": {
+          "x": "https://x.com/Airon_Layer1",
+          "github": "https://github.com/aironnetwork",
+          "medium": "https://medium.com/@Airon_Layer1",
+          "telegram": "https://t.me/airon_network"
+        },
+        "networks": ["Airon L1 (PoA)", "BNB Chain", "Ethereum", "Arbitrum", "Base"],
+        "features": ["Swap", "Liquidity (LP)", "Bridge", "Launchpad", "Staking", "AI Audit", "AI Deploy"]
+      }
+    </script>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

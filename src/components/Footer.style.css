@@ -1,0 +1,129 @@
+.af {
+  width: 100%;
+  background: #0a0d0f;        
+  color: #cfe6da;               
+  border-top: 1px solid #151e22;
+  margin-top: 28px;
+}
+
+.af__wrap {
+  max-width: 1440px;           
+  margin: 0 auto;
+  padding: 18px 20px;
+}
+
+
+.af__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+
+.af__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.af__logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 6px 16px rgba(0,0,0,0.35);
+}
+.af__brandtext { display: flex; flex-direction: column; gap: 3px; }
+.af__title {
+  font-weight: 800;
+  letter-spacing: .2px;
+  color: #ffffff;
+}
+.af__tag {
+  font-size: 12px;
+  color: #94b8a8;
+}
+
+
+.af__links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.af__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #d8efe5;
+  background: #0b0f11;
+  border: 1px solid #1a262a;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all .15s ease;
+}
+.af__link:hover {
+  color: #ffffff;
+  border-color: #294c44;
+  transform: translateY(-1px);
+}
+.af__link--muted {
+  opacity: .7;
+  pointer-events: none;      
+  background: #0e1214;
+  border-color: #1a2226;
+}
+
+
+.af__divider {
+  height: 1px;
+  border: 0;
+  margin: 14px 0;
+  background: linear-gradient(90deg,
+    rgba(0,255,99,0) 0%,
+    rgba(0,255,99,.25) 50%,
+    rgba(0,255,99,0) 100%);
+}
+
+
+.af__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.af__copy {
+  font-size: 13px;
+  color: #a6b3ba;
+}
+.af__legal {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.af__legal .af__link {
+  background: transparent;      
+  border-color: transparent;
+  padding: 6px 8px;
+  color: #9fd7c2;
+  font-weight: 600;
+}
+.af__legal .af__link:hover {
+  background: #0f1618;
+  border-color: #213138;
+  color: #fff;
+}
+
+
+@media (max-width: 600px) {
+  .af__wrap { padding: 16px 14px; }
+  .af__links { width: 100%; }
+  .af__legal { flex-wrap: wrap; }
+}

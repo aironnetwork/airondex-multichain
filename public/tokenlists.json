@@ -1,0 +1,33 @@
+{
+  "name": "AIRON BSC Testnet",
+  "timestamp": "2025-09-25T00:00:00Z",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "keywords": ["airon", "bsc-testnet", "tokenlist"],
+  "logoURI": "https://ai.airon.network/logo.png",
+  "tokens": [
+    {
+      "name": "WBNB Token",
+      "symbol": "WBNB",
+      "address": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://tokens.pancakeswap.finance/images/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png"
+    },
+    {
+      "name": "Binance Pegged USDT",
+      "symbol": "USDT",
+      "address": "0x221c5b1a293aac1187ed3a7d7d2d9ad7fe1f3fb0",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://tokens.pancakeswap.finance/images/0x55d398326f99059fF775485246999027B3197955.png"
+    },
+    {
+      "name": "Binance Pegged USD Coin",
+      "symbol": "USDC",
+      "address": "0x64544969ed7EBf5f083679233325356EbE738930",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://tokens.pancakeswap.finance/images/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d.png"
+    }
+  ]
+}
